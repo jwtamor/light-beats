@@ -257,13 +257,13 @@ KS-S stereo microphone/headphone jack&lt;p&gt;
 <plain>
 </plain>
 <instances>
-<instance part="INPUT" gate="1" x="63.5" y="73.66" smashed="yes">
-<attribute name="NAME" x="55.88" y="77.47" size="1.778" layer="95"/>
-<attribute name="VALUE" x="55.88" y="63.5" size="1.778" layer="96"/>
+<instance part="INPUT" gate="1" x="53.34" y="83.82" smashed="yes">
+<attribute name="NAME" x="45.72" y="87.63" size="1.778" layer="95"/>
+<attribute name="VALUE" x="45.72" y="73.66" size="1.778" layer="96"/>
 </instance>
-<instance part="OUTPUT" gate="1" x="5.08" y="73.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="12.7" y="77.47" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="12.7" y="63.5" size="1.778" layer="96" rot="MR0"/>
+<instance part="OUTPUT" gate="1" x="-5.08" y="83.82" smashed="yes" rot="MR0">
+<attribute name="NAME" x="2.54" y="87.63" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="2.54" y="73.66" size="1.778" layer="96" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -273,36 +273,52 @@ KS-S stereo microphone/headphone jack&lt;p&gt;
 <segment>
 <pinref part="OUTPUT" gate="1" pin="5"/>
 <pinref part="INPUT" gate="1" pin="5"/>
-<wire x1="17.78" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
-<label x="30.48" y="76.2" size="1.778" layer="95"/>
+<wire x1="7.62" y1="86.36" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
+<label x="20.32" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="OUTPUT" gate="1" pin="1"/>
 <pinref part="INPUT" gate="1" pin="1"/>
-<wire x1="17.78" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
-<label x="30.48" y="66.04" size="1.778" layer="95"/>
+<wire x1="7.62" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<label x="20.32" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RCHAN" class="0">
 <segment>
 <pinref part="OUTPUT" gate="1" pin="2"/>
 <pinref part="INPUT" gate="1" pin="2"/>
-<wire x1="17.78" y1="68.58" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
-<label x="30.48" y="68.58" size="1.778" layer="95"/>
+<wire x1="7.62" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
+<label x="20.32" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="LOUTSW" class="0">
 <segment>
 <pinref part="OUTPUT" gate="1" pin="4"/>
-<wire x1="17.78" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
+<label x="7.62" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="ROUTSW" class="0">
 <segment>
 <pinref part="OUTPUT" gate="1" pin="3"/>
-<wire x1="17.78" y1="71.12" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
+<label x="7.62" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LINSW" class="0">
+<segment>
+<pinref part="INPUT" gate="1" pin="4"/>
+<wire x1="40.64" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<label x="33.02" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RINSW" class="0">
+<segment>
+<pinref part="INPUT" gate="1" pin="3"/>
+<wire x1="40.64" y1="81.28" x2="38.1" y2="81.28" width="0.1524" layer="91"/>
+<label x="33.02" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
